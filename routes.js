@@ -1,7 +1,7 @@
 const importAll = r => r.keys()
   .map(key => key.slice(2)
     .replace('.vue', '').split('/'));
-const pages = importAll(require.context('../views', true, /\.vue$/));
+const pages = importAll(require.context('../../src/views', true, /\.vue$/));
 
 const generateRoute = path => {
   if (path[0].toLowerCase().startsWith('index') && path.length > 1) {
@@ -57,14 +57,14 @@ const defaultLayout = 'default';
 export default pages
   .filter(path => !path.some(childrenFilter))
   .map(async path => {
-    const { default: component } = await import(`../views/${path.join('/')}`);
+    const { default: component } = await import(`../../src/views/${path.join('/')}`);
     const { layout, middlewares, name } = component;
     const route = `/${generateRoute([...path])}`;
     let children = [];
     if (childrenByPath[route]) {
       const promises = childrenByPath[route].map(async ({ path, route }) => {
         const { default: childComponent } =
-          await import(`../views/${path.join('/')}`);
+          await import(`../../src/views/${path.join('/')}`);
         const {
           layout: childLayout,
           middlewares: childMiddleware,
