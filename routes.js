@@ -1,10 +1,3 @@
-
-// ******************************************
-// *** Routes is added automatically      ***
-// *** See Nuxt JS routing documentation  ***
-// *** https://nuxtjs.org/                ***
-// ******************************************
-
 const importAll = r => r.keys()
   .map(key => key.slice(2)
     .replace('.vue', '').split('/'));
@@ -59,7 +52,7 @@ const childrenByPath = pages
     return acc;
   }, {});
 
-const defaultLayout = 'AppLayoutDefault';
+const defaultLayout = 'default';
 
 export default pages
   .filter(path => !path.some(childrenFilter))
