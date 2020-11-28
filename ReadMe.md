@@ -132,7 +132,8 @@ To add children (nested routes) to your should start your route with `^` on the 
 
 Note restriction: it is not possible now to add second level children
 
-##Layouts and middlewares
+## Layouts and middlewares
+
 Vue automatic router allows you to specify layouts and middlewares inside your component.
 
 To add layouts to the project read this article:
