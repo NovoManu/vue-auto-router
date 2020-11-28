@@ -69,7 +69,7 @@ export default pages
           layout: childLayout,
           middlewares: childMiddleware,
           name: childName
-        } = component;
+        } = childComponent;
         return {
           path: route,
           name: childName,
