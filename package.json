@@ -5,10 +5,15 @@
   "main": "index.js",
   "keywords": [
     "vue",
-    "router"
+    "router",
+    "auto"
   ],
   "author": "Manu Ustenko",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovoManu/vue-auto-router.git"
+  },
   "dependencies": {
     "vue": "^2.6.12",
     "vue-router": "^3.4.9"
