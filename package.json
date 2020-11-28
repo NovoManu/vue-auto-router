@@ -1,5 +1,5 @@
 {
-  "name": "vue-auto-router",
+  "name": "vue-automatic-router",
   "version": "1.0.0",
   "description": "Automatic router for Vue.js",
   "main": "index.js",

@@ -4,6 +4,28 @@ That is mean that it does not need to change routing by developer.
 Instead, routes will be added automatically once you add
 a new page into views directory.
 
+## Installation
+```
+npm install --save vue-automatic-router
+```
+
+main.js should be changed as
+
+Vue 2
+
+```
+const init = async() => {
+  const module = await import('vue-automatic-router');
+  const router = await module.default;
+  new Vue({
+    router,
+    render: h => h(App)
+  }).$mount('#app');
+};
+
+init();
+```
+
 ## How to add new pages
 Automatic router will read your `views` directory and create appropriate routes.
 For example:
