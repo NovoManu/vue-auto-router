@@ -1,0 +1,16 @@
+{
+  "name": "vue-auto-router",
+  "version": "1.0.0",
+  "description": "Automatic router for Vue.js",
+  "main": "index.js",
+  "keywords": [
+    "vue",
+    "router"
+  ],
+  "author": "Manu Ustenko",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9"
+  }
+}
