@@ -1,6 +1,6 @@
 {
   "name": "vue-automatic-router",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Automatic router for Vue.js",
   "main": "index.js",
   "keywords": [
@@ -15,7 +15,6 @@
     "url": "git+https://github.com/NovoManu/vue-auto-router.git"
   },
   "dependencies": {
-    "vue": "^2.6.12",
-    "vue-router": "^3.4.9"
+    "vue-router": "^4.0.0"
   }
 }
