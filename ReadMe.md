@@ -26,6 +26,19 @@ const init = async() => {
 init();
 ```
 
+Vue 3
+```
+const init = async() => {
+  const module = await import('vue-automatic-router')
+  const router = await module.default
+  createApp(App)
+    .use(router)
+    .mount('#app')
+}
+
+init()
+```
+
 ## How to add new pages
 Automatic router will read your `views` directory and create appropriate routes.
 For example:
