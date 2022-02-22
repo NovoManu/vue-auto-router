@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import routes from './routes'
 
 const setMiddlewares = (to, from, next) => {
@@ -14,7 +14,7 @@ const setMiddlewares = (to, from, next) => {
 
 export default Promise.all(routes).then(routes => {
   const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes
   })
 
